@@ -20,3 +20,5 @@ set(PACKAGE_REDTEST "agl-service-helloworld-redtest")
 
 configure_file(run-redtest.in run-redtest @ONLY)
 
+install(FILES run-redtest DESTINATION /usr/lib/${PACKAGE_REDTEST}/redtest)
+

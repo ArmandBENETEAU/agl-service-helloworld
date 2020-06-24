@@ -20,5 +20,6 @@ set(PACKAGE_REDTEST "agl-service-helloworld-redtest")
 
 configure_file(run-redtest.in run-redtest @ONLY)
 
-install(FILES ${CMAKE_BINARY_DIR}/redtest/run-redtest DESTINATION /usr/lib/${PACKAGE_REDTEST}/redtest)
+install(PROGRAMS ${CMAKE_BINARY_DIR}/redtest/run-redtest
+	DESTINATION /usr/lib/${PACKAGE_REDTEST}/redtest)
 
